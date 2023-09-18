@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script defer src="js.js"></script>
+    <style>
+        main {
+            width: 90vh;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        body{
+            background-image: url(img/fundo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body onload="ChamaNome()">
+    <main>
+        <div style="display: flex; flex-direction: column;text-align: center; width: 300px; height: 400px; background-color: wheat; border-radius: 30px;">
+
+
+           <div class="content" style="display: flex; flex-direction: column;">
+            
+            <h3>Menu Principal</h3>
+            <h4>Qual modolo deseja acessar?</h4>
+            <br>
+
+            <div style="display: flex; align-items: center;  ">
+
+            <input type="radio" id="reserva" name="opcao" value="Reserva de Quartos">
+        
+            <label for="reserva">Reserva de Quartos</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="cad-hosp" name="opcao"  value="Cadastro de Hospede">
+            <label for="cad-hosp">Cadastro de Hospede</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="cad-hosp2" name="opcao"  value="Cadastro de Hospede 2">
+            <label for="cad-hosp2">Cadastro de Hospede 2</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="eventos" name="opcao"  value="Eventos">
+            <label for="eventos">Eventos</label>
+            </div>
+        
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="buffet" name="opcao"  value="Buffet">
+            <label for="buffet">Buffet</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="auditorio" name="opcao"  value="Auditorio">
+            <label for="auditorio">Auditório</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="restaurante" name="opcao" value="Reserva do Restaurante">
+            <label for="restaurante">Reserva do Restaurante</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="carro" name="opcao" value="Carro">
+            <label for="carro">Carro do Hotel</label>
+            </div>
+
+            <div style="display: flex; align-items: center; ">
+            <input type="radio" id="arcondicionado" name="opcao" value="ArCondicionado">
+            <label for="arcondicionado">Ar-Condicionado</label>
+            </div>
+            
+            <br>
+            <button style="border-radius: 30px;" onclick=Selecionar()>Selecionar</button>
+            <br>
+            <button style="border-radius: 30px;" onclick=FechaPagina()>Sair</button>
+
+            </div>
+        </div>
+
+    </main>
+
+    
+</body>
+
+</html>
